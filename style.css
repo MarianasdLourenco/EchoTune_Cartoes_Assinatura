@@ -1,0 +1,180 @@
+/* Importando a fonte Raleway */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Reset básico */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background: #f5f5f5;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+header span {
+    color: #F0BC5E;
+}
+
+header h1 {
+    margin: 15px 0;
+    color:#000000;
+    font-size: 35px;
+}
+
+header p {
+    margin: 15px 0;
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+}
+
+/* Seção principal */
+section {
+    background: #ffffff;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Estilo dos cartões de plano */
+.container-card {
+    background: #ffffff;
+    border-radius: 10px;
+    width: 250px;
+    border: 1px solid #aeaead;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 2px 3px rgba(137, 137, 137, 0.372);
+}
+
+/* Badge de promoção */
+.container-card span {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 8px;
+    position: relative;
+    right: 25%;
+    bottom: 15px;
+    font-size: 15px;
+}
+
+/* Título do plano */
+.container-card h2 {
+    color: #F0BC5E;
+    font-weight: bold;
+    margin: 5px 0 10px;
+}
+
+/* Descrição e preço */
+.container-card p {
+    margin: 10px 0 20px;
+    font-weight: 500;
+    color:#000000;
+}
+
+.container-card .card-preco {
+    color: #000000;
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.card-preco sub {
+    font-size: 18px;
+    color: #dcac54;
+    font-weight: 500;
+}
+
+/* Imagem no card */
+.container-card img {
+    width: 40%;
+    height: auto;
+}
+
+/* Listagem de benefícios */
+.conteudo-lista p {
+    margin: 15px 0;
+}
+
+.lista-item i {
+    margin-right: 10px;
+}
+
+/* Botão de ação */
+.conteudo-button {
+    background: #dcac54;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 10px 30px;
+    box-shadow: 4px 2px 3px rgba(137, 137, 137, 0.356);
+}
+
+.conteudo-button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.conteudo-button:hover {
+    background: #c39747;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    header {
+        height: auto;
+        padding: 2em;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    section {
+        gap: 20px;
+    }
+
+    .container-card {
+        width: 200px;
+        padding: 10px;
+    }
+
+    .container-card h2 {
+        font-size: 20px;
+    }
+
+    .container-card p {
+        font-size: 14px;
+    }
+
+    .container-card .card-preco {
+        font-size: 28px;
+    }
+
+    .conteudo-button a {
+        font-size: 16px;
+    }
+
+    .container-card span {
+        right: 16%;
+        bottom: 10px;
+    }
+}
